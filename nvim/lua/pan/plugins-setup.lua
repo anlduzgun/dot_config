@@ -68,7 +68,13 @@ use ({
     end,
   })
     
-  -- git integration
+
+    use {
+	"windwp/nvim-autopairs",
+    config = function() require("nvim-autopairs").setup {} end} 
+ 
+
+    -- git integration
   use("lewis6991/gitsigns.nvim") -- show line modifications on left hand side
   
   use({
